@@ -30,11 +30,9 @@ def make_chain(sentences):
     pickle.dump(chain, open("chain.pkl", "wb"))
 
 def main():
-    sentences = parse_corpus("whitmanCopy.txt")
-    make_chain(sentences)
-    # end_words = parse_corpus(corpus_df)
-    # pivot_df = pd.read_pickle('whitman_pivoted_df.pickle')
-    # print(make_something("What", pivot_df, end_words))
+    whitman_sentences = parse_corpus("whitmanCopy.txt")
+    make_chain(whitman_sentences, chain)
+
 
 
 

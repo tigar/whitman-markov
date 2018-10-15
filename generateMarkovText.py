@@ -14,11 +14,10 @@ def make_poem(chain):
         if word2 == "ENDWORD":
             break
         poem.append(word2)
-    print(" ".join(poem))
+    return " ".join(poem)
 
 def main():
     chain = pickle.load(open("chain.pkl", "rb"))
-    make_poem(chain)
 
 
 if __name__ == '__main__':
