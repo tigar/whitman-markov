@@ -1,5 +1,6 @@
 from generateMarkovText import make_poem
 import tweepy
+import time
 import pickle
 from os import environ
 
