@@ -1,2 +1,2 @@
-worker: python tweeterBot.py
-web: python dummy_flask_server.py
+web: python3 dummy_flask_server.py
+worker: python3 tweeterBot.py
