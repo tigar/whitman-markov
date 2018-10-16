@@ -14,7 +14,7 @@ api = tweepy.API(auth)
 chain = pickle.load(open("chain.pkl", "rb"))
 
 while True:
-    tweet = generateMarkovText()
+    tweet = make_poem(chain)
     api.update_status(tweet)
     time.sleep(21600)
 
