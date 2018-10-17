@@ -14,7 +14,7 @@ print(CONSUMER_KEY, CONSUMER_SECRET)
 auth = tweepy.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
 auth.set_access_token(ACCESS_KEY, ACCESS_SECRET)
 api = tweepy.API(auth)
-chain = pickle.load(open("chain.pkl", "rb"))
+chain = pickle.load(open("emerson_whitman.pkl", "rb"))
 
 while True:
     tweet = make_poem(chain)

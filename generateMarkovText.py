@@ -17,7 +17,7 @@ def make_poem(chain):
     return " ".join(poem)
 
 def main():
-    chain = pickle.load(open("chain.pkl", "rb"))
+    chain = pickle.load(open("emerson_whitman.pkl", "rb"))
 
 
 if __name__ == '__main__':

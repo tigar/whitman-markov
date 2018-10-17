@@ -27,12 +27,15 @@ def make_chain(sentences):
                 chain[key].append(word3)
             else:
                 chain[key] = [word3]
-    pickle.dump(chain, open("chain.pkl", "wb"))
+    pickle.dump(chain, open("gutenberg.pkl", "wb"))
 
 def main():
-    whitman_sentences = parse_corpus("whitmanCopy.txt")
-    make_chain(whitman_sentences, chain)
+    # sentences = parse_corpus("corpuses/allPoems.txt")
+    # make_chain(sentences)
 
+    # For testing
+    sentences = parse_corpus("gutenberg_poems.txt")
+    make_chain(sentences)
 
 
 
