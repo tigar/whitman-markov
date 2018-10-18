@@ -20,4 +20,4 @@ while True:
     tweet = make_poem(chain)
     print(tweet)
     api.update_status(tweet)
-    time.sleep(1500)
+    time.sleep(21600)
