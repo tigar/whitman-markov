@@ -2,7 +2,6 @@ import nltk
 import sys
 import fileinput
 import pickle
-import spacy
 import re
 
 '''

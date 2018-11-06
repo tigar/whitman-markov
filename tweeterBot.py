@@ -2,6 +2,7 @@ from generateMarkovText import make_bigram_poem
 import tweepy
 import time
 import pickle
+import random
 from os import environ
 
 CONSUMER_KEY = environ['CONSUMER_KEY']
