@@ -58,12 +58,10 @@ def make_chain(sentences):
                 chain[key].append(word2)
             else:
                 chain[key] = [word2]
-    print(chain)
     pickle.dump(chain, open("pickles/bigramEmersonWhitman.pkl", "wb"))
 
 def main():
     sentences = parse_corpus_regexp("corpuses/allPoems.txt")
-    print(sentences)
     make_chain(sentences)
 
     # For testing
